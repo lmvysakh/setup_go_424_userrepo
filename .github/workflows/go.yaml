@@ -17,10 +17,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Go
-        uses: matthewhughes-uw/setup-go@96dc2922127bfc204e643cd3360a1342f9849326
+        uses: akv-platform/setup-go@remove-toolchains
         with:
           go-version-file: 'go.mod'
       - name: go version
         run: go version
       - name: Run app
         run: go run ./main.go
+
+
+     # uses: matthewhughes-uw/setup-go@96dc2922127bfc204e643cd3360a1342f9849326
