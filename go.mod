@@ -1,8 +1,8 @@
 module example-mod
 
-go 1.21.3
+go 1.22.2
 
-toolchain go1.22.2
+toolchain go1.21.3
 
 require golang.org/x/tools v0.13.0
 
